@@ -13,6 +13,7 @@ public class Product {
         this.price = price;
     }
 
+    // without the getter methods the private fields will not be visible in the response body
     public long getId() {
         return id;
     }
