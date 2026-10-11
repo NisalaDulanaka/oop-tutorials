@@ -5,18 +5,10 @@ import org.springframework.web.bind.annotation.*;
 import uk.ac.westminster.products_api.dto.RegisterInput;
 
 @RestController
-
-@RequestMapping("/")
-public class TestController {
-
+public class InfoController {
     @GetMapping("/info")
     public String getInfo() {
-        return "Info";
-    }
-
-    @GetMapping("/good-bye")
-    public String getBye() {
-        return "Good bye";
+        return "This is the test application created for week 1 tutorial";
     }
 
     @PostMapping("/register")
